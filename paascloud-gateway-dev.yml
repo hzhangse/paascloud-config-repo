@@ -9,6 +9,9 @@ spring:
       max-request-size: 50MB
       max-file-size: 50MB
 
+ribbon:
+   restclient:
+     enabled:true
 zuul:
   host:
     socket-timeout-millis: 60000
