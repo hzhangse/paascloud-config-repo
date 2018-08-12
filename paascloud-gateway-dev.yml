@@ -89,7 +89,7 @@ proxy:
     routes:
       uac-route: oauth2
       mdc-route: oauth2
-      load-balanced: true
+    loadBalanced: true
 
 paascloud:
   enableSqlLogInterceptor: false
