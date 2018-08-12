@@ -52,11 +52,11 @@ spring:
         login-password: admin
   mail:
     host: smtp.163.com
-    username: iotbull@163.com
-    password: iotbull123456
+    username: rainbow954@163.com
+    password: !QAZzaq1
     port: 465
     protocol: smtp
-    test-connection: true
+    test-connection: false
     default-encoding: UTF-8
     properties:
       mail:
