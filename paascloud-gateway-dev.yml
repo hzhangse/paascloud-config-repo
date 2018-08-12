@@ -11,7 +11,7 @@ spring:
 
 ribbon:
    restclient:
-     enabled:true
+     enabled: true
 zuul:
   host:
     socket-timeout-millis: 60000
