@@ -9,9 +9,9 @@ spring:
       max-request-size: 50MB
       max-file-size: 50MB
 
-ribbon:
-   restclient:
-     enabled: true
+#ribbon:
+#   restclient:
+#     enabled: true
 zuul:
   host:
     socket-timeout-millis: 60000
@@ -89,7 +89,7 @@ proxy:
     routes:
       uac-route: oauth2
       mdc-route: oauth2
-    loadBalanced: true
+#    loadBalanced: true
 
 paascloud:
   enableSqlLogInterceptor: false
