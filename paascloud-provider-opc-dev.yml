@@ -49,8 +49,9 @@ security:
     resource:
       user-info-uri: http://paascloud-gateway:7979/uac/user
       prefer-token-info: false
-      jwt:
-        key-uri: http://paascloud-provider-uac:8000/oauth/token_key
+      
+#      jwt:
+#        key-uri: http://paascloud-provider-uac:8000/oauth/token_key
 
 paascloud:
   enableSqlLogInterceptor: false
@@ -76,10 +77,11 @@ paascloud:
       clientSecret: ${security.oauth2.client.clientSecret}
       clientAuthenticationScheme: header
       tokenStore: jwt
+      publicKey: classpath:/public.txt
   aliyun:
     key:
-      accessKeyId: yourAliyunAccessKey
-      accessKeySecret: yourAliyunKeySecret
+      accessKeyId: LTAIteb03c94S7XY
+      accessKeySecret: w1MWYJzrfoPWKr8zSksjGiB1SWeB5d
     rocketMq:
       enable: true
       reliableMessageConsumer: true

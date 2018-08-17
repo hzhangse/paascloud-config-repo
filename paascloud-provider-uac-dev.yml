@@ -67,6 +67,9 @@ paascloud:
       clientSecret: ${security.oauth2.client.clientSecret}
       clientAuthenticationScheme: header
   security:
+    keystore: 
+      location: classpath:/server.jks
+      password: iotbull-paascloud-storepass
     social:
       filterProcessesUrl: /auth/callback
       qq:
@@ -129,3 +132,11 @@ paascloud:
         clientSecret: paascloudClientSecret
         accessTokenValidateSeconds: 7200
         scope: "*"
+        
+        
+#encrypt:
+#  key-store:
+#    location: classpath:/server.jks
+#    password: iotbull-paascloud-storepass
+#    alias: paascloud-key-store
+#    secret: iotbull-paascloud-keypass        
