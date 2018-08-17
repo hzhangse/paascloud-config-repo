@@ -92,7 +92,7 @@ paascloud:
   
   oauth2:
     client:
-      publicKey: classpath:/public.txt
+      publicKey: classpath:/publicKey.txt
       
 # swagger butler配置
 swagger.butler:
