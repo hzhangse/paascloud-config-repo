@@ -77,7 +77,7 @@ paascloud:
       clientSecret: ${security.oauth2.client.clientSecret}
       clientAuthenticationScheme: header
       tokenStore: jwt
-      publicKey: classpath:/public.txt
+      publicKey: classpath:/publicKey.txt
   aliyun:
     key:
       accessKeyId: LTAIteb03c94S7XY

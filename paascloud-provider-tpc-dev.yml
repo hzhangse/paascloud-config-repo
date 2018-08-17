@@ -69,7 +69,7 @@ paascloud:
       clientSecret: ${security.oauth2.client.clientSecret}
       clientAuthenticationScheme: header
       tokenStore: jwt
-      publicKey: classpath:/public.txt
+      publicKey: classpath:/publicKey.txt
   zk:
     zkAddressList: paascloud-provider-zk:2181
     namespace: paascloud-elastic-job
