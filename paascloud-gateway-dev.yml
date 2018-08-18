@@ -79,7 +79,7 @@ security:
       prefer-token-info: false
 #      jwt:
 #        key-uri: http://paascloud-provider-uac:8000/oauth/token_key
-      load-balanced: true  
+#      load-balanced: true  
 
 proxy:
   auth:
@@ -88,11 +88,10 @@ proxy:
       mdc-route: oauth2
 
 paascloud:
-  enableSqlLogInterceptor: false
-  
-  oauth2:
-    client:
-      publicKey: classpath:/publicKey.txt
+  enableSqlLogInterceptor: false  
+#  oauth2:
+#    client:
+#      publicKey: classpath:/publicKey.txt
       
 # swagger butler配置
 swagger.butler:
