@@ -77,6 +77,7 @@ security:
     resource:
       user-info-uri: http://paascloud-provider-uac/user
       prefer-token-info: false
+      loadBalanced: true
       jwt:
         key-uri: http://paascloud-provider-uac/oauth/token_key
 

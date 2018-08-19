@@ -49,7 +49,7 @@ security:
     resource:
       user-info-uri: http://paascloud-gateway/uac/user
       prefer-token-info: false
-      
+      loadBalanced: true
       jwt:
         key-uri: http://paascloud-gateway/uac//oauth/token_key
 
