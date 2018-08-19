@@ -39,9 +39,11 @@ security:
       user-authorization-uri: http://paascloud-gateway/uac/oauth/authorize
     resource:
       id: paascloud-resource-uac
-      loadBalanced: true
       filter-order: 3
-
+      user-info-uri: http://paascloud-gateway/uac/user
+      prefer-token-info: false
+      loadBalanced: true
+      
 paascloud:
   enableSqlLogInterceptor: false
   aliyun:
@@ -67,10 +69,7 @@ paascloud:
       clientId: ${security.oauth2.client.clientId}
       clientSecret: ${security.oauth2.client.clientSecret}
       clientAuthenticationScheme: header
-    resource:
-      user-info-uri: http://paascloud-gateway/uac/user
-      prefer-token-info: false
-      loadBalanced: true
+
   security:
     keystore: 
       location: classpath:/server.jks
