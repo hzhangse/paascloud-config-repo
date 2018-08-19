@@ -40,7 +40,7 @@ security:
     resource:
       id: paascloud-resource-uac
       filter-order: 3
-      user-info-uri: http://paascloud-gateway/uac/user
+      user-info-uri: /user
       prefer-token-info: false
       loadBalanced: true
       
