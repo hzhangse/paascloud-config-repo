@@ -39,7 +39,7 @@ security:
       user-authorization-uri: http://paascloud-gateway/uac/oauth/authorize
     resource:
       id: paascloud-resource-uac
-      filter-order: 3
+     # filter-order: 3
       user-info-uri: /user
       prefer-token-info: false
       loadBalanced: true
