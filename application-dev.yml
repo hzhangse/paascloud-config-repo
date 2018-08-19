@@ -99,7 +99,7 @@ ribbon:
   MaxAutoRetriesNextServer: 2
   OkToRetryOnAllOperations: false
   ConnectTimeout: 60000
-  ReadTimeout: 20000
+  ReadTimeout: 200000
 
 hystrix:
   command:
@@ -109,7 +109,7 @@ hystrix:
           enabled: true
         isolation:
           thread:
-            timeoutInMilliseconds: 20000
+            timeoutInMilliseconds: 200000
 
 info:
   关于我们: http://iotbull.com
